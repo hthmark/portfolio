@@ -1,6 +1,6 @@
 import { finalCtaContent } from "@/lib/content";
 import { FadeIn } from "./FadeIn";
-import { PillButton } from "./PillButton";
+import { ContactForm } from "./ContactForm";
 
 export function FinalCTA() {
   return (
@@ -12,9 +12,7 @@ export function FinalCTA() {
         <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-ink/60">
           {finalCtaContent.subtext}
         </p>
-        <div className="mt-8">
-          <PillButton href="#contact">{finalCtaContent.cta}</PillButton>
-        </div>
+        <ContactForm />
       </FadeIn>
     </section>
   );

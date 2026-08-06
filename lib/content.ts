@@ -3,29 +3,29 @@
 // (e.g. "/images/hero-portrait.jpg") once real photography is ready.
 
 export const siteConfig = {
-  name: "Dominic Nova",
-  shortName: "D. Nova",
-  domain: "dnova.com",
-  email: "hello@dnova.com",
+  name: "Gabe Gonzalez",
+  shortName: "G. Gonzalez",
+  location: "Blue Springs, MO",
+  email: "gabeagonzalez14@gmail.com",
+  resumeUrl: "/resume.pdf",
 };
 
 export const navLinks = [
   { label: "About Me", href: "#about" },
   { label: "Portfolio", href: "#portfolio" },
   { label: "Services", href: "#services" },
-  { label: "Blog", href: "#blog" },
 ];
 
 export const heroContent = {
   eyebrow: "Design start here..",
-  pageTitle: "Personal Portfolio Website",
-  sideLabel: "Portfolio 2024",
+  pageTitle: "Gabe Gonzalez's Personal Portfolio Website",
+  sideLabel: "Portfolio 2026",
   stats: [
     { value: "+200", label: "Projects completed" },
     { value: "+50", label: "Startup teams" },
   ],
   headline: "Hello",
-  tagline: "— it's Dominic Nova, a design wizard",
+  tagline: "— it's Gabe Gonzalez, an AI marketing strategist",
   scrollLabel: "Scroll down",
   portraitImage:
     "https://picsum.photos/id/1005/1200/1400",
@@ -35,21 +35,21 @@ export const aboutContent = {
   eyebrow: "About Me",
   heading: "About Me",
   paragraphs: [
-    "I'm specialize in turning complex problems into elegant solutions. My approach blends creativity with strategic thinking to deliver designs that not only look great but work seamlessly.",
-    "Ready to start your next project? Let's build something people remember, together.",
+    "I'm a strategic marketing leader who builds AI-augmented growth systems — from competitive intelligence to programmatic SEO — turning a lean operating budget into an 18.96x blended marketing ROI.",
+    "I use AI to compress research and content production timelines while scaling organic search, lifecycle email, and outreach programs that now influence 66% of new-logo wins.",
   ],
   badgeIcon: "✦",
-  statValue: "120%",
-  statCaption:
-    "Average increase in client engagement in the first 6 months",
+  statValue: "18.96x",
+  statCaption: "Blended marketing ROI built from a lean operating budget at Go Solutions",
+  // TODO: swap for a real headshot — no photo was supplied yet.
   primaryPortrait: "https://picsum.photos/id/1012/600/700",
   floatingHeadshot: "https://picsum.photos/id/1027/200/200",
   blurbs: [
     {
-      text: "With 4+ years of experience, I specialize in creating intuitive, user-focused designs that solve real-world problems and deliver seamless digital experiences.",
+      text: "I partner closely with sales leadership to align messaging, lead scoring, and pipeline attribution — turning marketing into a revenue driver that closed $651K in influenced deals at a 46% win rate.",
     },
     {
-      text: "I'm working closely with clients, blending creativity with strategy to bring their vision to life through thoughtful, impactful design solutions.",
+      text: "From a $2M+ Google Ads program to a 335K-send lifecycle email engine, I build full-funnel systems that compound — not just campaigns that spike and fade.",
     },
   ],
 };
@@ -60,24 +60,6 @@ export type WorkItem = {
   image: string;
 };
 
-export const featuredWork: WorkItem[] = [
-  {
-    title: "Halo Digital Agency website",
-    agency: "Squarize",
-    image: "https://picsum.photos/id/1015/800/900",
-  },
-  {
-    title: "Halo Digital Agency website",
-    agency: "Squarize",
-    image: "https://picsum.photos/id/1039/800/900",
-  },
-  {
-    title: "Digital Agency website",
-    agency: "Squarize",
-    image: "https://picsum.photos/id/1043/800/900",
-  },
-];
-
 export type ExperienceRow = {
   company: string;
   location: string;
@@ -85,61 +67,49 @@ export type ExperienceRow = {
   role: string;
   tags: string[];
   expanded?: {
-    images: string[];
     paragraph: string;
   };
 };
 
 export const experienceContent = {
   eyebrow: "• Experiences",
-  heading: "Explore My Design Journey",
+  heading: "Explore My AI Marketing Journey",
   paragraph:
-    "Over the past 4+ years, I've had the opportunity to work on a wide range of design projects, collaborating with diverse teams and clients to bring compelling visions to life.",
+    "From programmatic SEO to AI-assisted competitive intelligence, I've spent the past several years building full-funnel growth systems — partnering with sales and leadership to turn marketing into a measurable revenue driver.",
   cta: "Book A Call",
+  resumeLabel: "View Resume",
   rows: [
     {
-      company: "Creative Minds, New York, USA",
-      location: "New York, USA",
-      dateRange: "February 2023 - Present",
-      role: "Freelance designer, New York, Senior Product Designer",
-      tags: ["UI/UX"],
-    },
-    {
-      company: "Innovative Designs Inc, USA",
-      location: "USA",
-      dateRange: "January 2022 - February 2023",
-      role: "Lead Product Designer, San Francisco - Clothing brand experiences",
-      tags: ["Branding"],
-    },
-    {
-      company: "Visionary Creations Ltd, UK",
-      location: "UK",
-      dateRange: "February 2022 - Present",
-      role: "Principal Designer, London - Clothing brand experiences",
-      tags: ["Branding", "UI/UX"],
-    },
-    {
-      company: "FutureTech, Berlin, Germany",
-      location: "Berlin, Germany",
-      dateRange: "February 2022 - Present",
-      role: "Senior Product Designer",
-      tags: [],
+      company: "Go Solutions, Lansing, MI",
+      location: "Lansing, MI",
+      dateRange: "June 2025 - July 2026",
+      role: "Head of Marketing — AI-driven growth, programmatic SEO & lifecycle email",
+      tags: ["AI Marketing", "Growth"],
       expanded: {
-        images: [
-          "https://picsum.photos/id/1016/400/400",
-          "https://picsum.photos/id/1024/400/400",
-          "https://picsum.photos/id/1035/400/400",
-        ],
         paragraph:
-          "Here I had the opportunity to work on an exciting range of design projects, collaborating with cross-functional teams to elevate strategic product design initiatives and stay sharpened for evolving design challenges.",
+          "Built AI-powered workflows across competitive intelligence, programmatic SEO, content, and outreach — scaling a lean team to an 18.96x blended marketing ROI, 32.5% YoY organic session growth, and 66% marketing influence on new-logo wins.",
       },
     },
     {
-      company: "Expert Designs Inc, USA",
-      location: "USA",
-      dateRange: "February 2022 - Present",
-      role: "Freelance designer, New York, Senior Product Designer",
-      tags: ["Branding"],
+      company: "TCS World Travel, Seattle, WA",
+      location: "Seattle, WA",
+      dateRange: "Oct 2022 - June 2025",
+      role: "Paid Media Strategist — $2M+ Google Ads & multi-touch attribution",
+      tags: ["Paid Media"],
+    },
+    {
+      company: "Here to Help Marketing, Deltona, FL",
+      location: "Deltona, FL",
+      dateRange: "Dec 2019 - Oct 2022",
+      role: "Freelance Digital Marketing & E-Commerce Consultant",
+      tags: ["SEO", "E-Commerce"],
+    },
+    {
+      company: "Wiley Education Services, Maitland, FL",
+      location: "Maitland, FL",
+      dateRange: "Aug 2017 - Oct 2019",
+      role: "Student Services & Marketing Coordinator",
+      tags: ["Lifecycle Marketing"],
     },
   ] satisfies ExperienceRow[],
 };
@@ -148,7 +118,7 @@ export const ctaBannerContent = {
   eyebrow: "Your Next Free Consultation Now!",
   heading: "Exclusive Winter Deal Days Get a Free Consultation!",
   subtext:
-    "Book your free consultation today and let's craft a design strategy tailored to your goals.",
+    "Book your free consultation today and let's craft a growth strategy tailored to your goals.",
   cta: "Book A Call",
   backgroundImage: "https://picsum.photos/id/60/1600/900",
 };
@@ -176,48 +146,17 @@ export const latestWorksContent = {
   ] satisfies WorkItem[],
 };
 
-export type BlogPost = {
-  title: string;
-  excerpt: string;
-  category: string;
-  readTime: string;
-  image: string;
-};
-
-export const blogContent = {
-  eyebrow: "• Blogs",
-  heading: "Design Insights & Trends",
-  posts: [
-    {
-      title: "Conducting In-Depth Research and Usability Testing",
-      excerpt:
-        "Conducting in-depth research and usability testing to inform design decisions.",
-      category: "Research",
-      readTime: "5 min read",
-      image: "https://picsum.photos/id/180/700/700",
-    },
-    {
-      title: "Designing Cohesive Strategies and Visual Identities",
-      excerpt: "Designing cohesive strategies and visual identities for brands.",
-      category: "Branding",
-      readTime: "5 min read",
-      image: "https://picsum.photos/id/190/700/700",
-    },
-    {
-      title: "Providing Expert Advice and Strategic Guidance",
-      excerpt: "Providing expert advice and strategic guidance to product teams.",
-      category: "Strategy",
-      readTime: "5 min read",
-      image: "https://picsum.photos/id/201/700/700",
-    },
-  ] satisfies BlogPost[],
-};
-
 export const finalCtaContent = {
   heading: "Got a Vision? Let's Bring It to Life!",
   subtext:
     "I'm always excited to collaborate on new and innovative projects. Whether you're starting from scratch or refining an existing idea, let's talk.",
-  cta: "Book A Call",
+  form: {
+    nameLabel: "Name",
+    emailLabel: "Email",
+    messageLabel: "Message",
+    submitLabel: "Send Message",
+    sentLabel: "Opening your email client…",
+  },
 };
 
 export const footerContent = {
@@ -226,7 +165,6 @@ export const footerContent = {
     { label: "About Me", href: "#about" },
     { label: "Portfolio", href: "#portfolio" },
     { label: "Services", href: "#services" },
-    { label: "Blog", href: "#blog" },
   ],
   email: siteConfig.email,
   legal: `© ${new Date().getFullYear()} ${siteConfig.name}. All rights reserved.`,

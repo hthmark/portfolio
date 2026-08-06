@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { experienceContent } from "@/lib/content";
+import { experienceContent, siteConfig } from "@/lib/content";
 import { FadeIn } from "./FadeIn";
 import { ArrowUpRight } from "./icons/ArrowUpRight";
 import { PillButton } from "./PillButton";
@@ -20,9 +19,18 @@ export function Experience() {
           </FadeIn>
           <FadeIn delay={0.1} className="max-w-sm">
             <p className="text-sm leading-relaxed text-ink/60">{experienceContent.paragraph}</p>
-            <PillButton href="#contact" className="mt-4">
-              {experienceContent.cta}
-            </PillButton>
+            <div className="mt-4 flex flex-wrap items-center gap-4">
+              <PillButton href="#contact">{experienceContent.cta}</PillButton>
+              <a
+                href={siteConfig.resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-1.5 text-sm font-medium text-ink"
+              >
+                {experienceContent.resumeLabel}
+                <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </a>
+            </div>
           </FadeIn>
         </div>
 
@@ -49,28 +57,18 @@ export function Experience() {
 
               {row.expanded && (
                 <div className="flex flex-col gap-6 pb-8 md:flex-row md:items-center">
-                  <div className="flex gap-3">
-                    {row.expanded.images.map((img, idx) => (
-                      <div
-                        key={img + idx}
-                        className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl md:h-24 md:w-24"
-                      >
-                        <Image
-                          src={img}
-                          alt=""
-                          fill
-                          sizes="96px"
-                          className="duotone object-cover"
-                        />
-                      </div>
-                    ))}
-                  </div>
                   <p className="max-w-xl text-sm leading-relaxed text-ink/60">
                     {row.expanded.paragraph}
                   </p>
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-ink/15 text-ink/60">
+                  <a
+                    href={siteConfig.resumeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={experienceContent.resumeLabel}
+                    className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-ink/15 text-ink/60 transition-colors hover:border-accent hover:text-accent"
+                  >
                     <ArrowUpRight className="h-4 w-4" />
-                  </span>
+                  </a>
                 </div>
               )}
             </FadeIn>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Fraunces } from "next/font/google";
+import { heroContent } from "@/lib/content";
 import "./globals.css";
 
 const inter = Inter({
@@ -17,8 +18,9 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Personal Portfolio Website",
-  description: "Design start here — a personal portfolio website.",
+  title: heroContent.pageTitle,
+  description:
+    "Gabe Gonzalez — AI-driven growth and marketing strategy leader. Portfolio, experience, and resume.",
 };
 
 export default function RootLayout({

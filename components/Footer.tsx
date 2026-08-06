@@ -22,7 +22,7 @@ export function Footer() {
         </div>
         <div className="flex flex-col gap-2 pt-6 text-xs text-cream/40 md:flex-row md:items-center md:justify-between">
           <p>{footerContent.legal}</p>
-          <p>{siteConfig.domain}</p>
+          <p>{siteConfig.location}</p>
         </div>
       </div>
     </footer>
