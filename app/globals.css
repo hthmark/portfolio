@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f5f4f0;
+  color: #1a1a1a;
+}
+
+::selection {
+  background-color: #e8552e;
+  color: #f5f4f0;
+}
+
+.duotone {
+  filter: grayscale(1) contrast(1.05);
+}
+
+@layer utilities {
+  .container-portfolio {
+    @apply mx-auto w-full max-w-container px-6 md:px-10;
+  }
+}
