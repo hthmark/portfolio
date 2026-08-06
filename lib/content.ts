@@ -53,9 +53,18 @@ export const aboutContent = {
 
 export type WorkItem = {
   title: string;
-  agency: string;
-  image: string;
+  videoId: string;
 };
+
+// Thumbnail is derived from the video ID — no API key or fetch needed.
+// Falls back to hqdefault (always exists) if a video has no maxres thumbnail.
+export function youtubeThumbnail(videoId: string) {
+  return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+}
+
+export function youtubeUrl(videoId: string) {
+  return `https://www.youtube.com/watch?v=${videoId}`;
+}
 
 export type ExperienceRow = {
   company: string;
@@ -122,21 +131,11 @@ export const latestWorksContent = {
   eyebrow: "• Portfolio",
   heading: "Latest Works",
   viewMore: "View More",
+  channelUrl: "",
   items: [
     {
-      title: "Halo Digital Agency website",
-      agency: "Squarize",
-      image: "https://picsum.photos/id/1050/800/900",
-    },
-    {
-      title: "Halo Digital Agency website",
-      agency: "Squarize",
-      image: "https://picsum.photos/id/1051/800/900",
-    },
-    {
-      title: "Halo Digital Agency website",
-      agency: "Squarize",
-      image: "https://picsum.photos/id/1052/800/900",
+      title: "YouTube video",
+      videoId: "Am73sKyZ01U",
     },
   ] satisfies WorkItem[],
 };
