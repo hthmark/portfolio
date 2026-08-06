@@ -27,8 +27,7 @@ export const heroContent = {
   headline: "Hello",
   tagline: "— it's Gabe Gonzalez, an AI marketing strategist",
   scrollLabel: "Scroll down",
-  portraitImage:
-    "https://picsum.photos/id/1005/1200/1400",
+  portraitImage: "/images/hero-portrait.webp",
 };
 
 export const aboutContent = {
@@ -41,9 +40,8 @@ export const aboutContent = {
   badgeIcon: "✦",
   statValue: "18.96x",
   statCaption: "Blended marketing ROI built from a lean operating budget at Go Solutions",
-  // TODO: swap for a real headshot — no photo was supplied yet.
-  primaryPortrait: "https://picsum.photos/id/1012/600/700",
-  floatingHeadshot: "https://picsum.photos/id/1027/200/200",
+  primaryPortrait: "/images/about-portrait.webp",
+  floatingHeadshot: "/images/headshot.webp",
   blurbs: [
     {
       text: "I partner closely with sales leadership to align messaging, lead scoring, and pipeline attribution — turning marketing into a revenue driver that closed $651K in influenced deals at a 46% win rate.",
