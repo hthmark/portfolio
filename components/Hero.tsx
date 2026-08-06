@@ -7,10 +7,7 @@ export function Hero() {
     <section className="relative overflow-hidden bg-[#EDECE7] pb-20 pt-32 md:pb-28 md:pt-40">
       <div className="container-portfolio flex flex-col items-center text-center">
         <FadeIn>
-          <p className="text-sm text-ink/60">{heroContent.eyebrow}</p>
-        </FadeIn>
-        <FadeIn delay={0.05}>
-          <h2 className="mt-3 text-2xl font-medium tracking-tight md:text-3xl">
+          <h2 className="text-2xl font-medium tracking-tight md:text-3xl">
             {heroContent.pageTitle}
           </h2>
         </FadeIn>
@@ -32,7 +29,7 @@ export function Hero() {
                 {heroContent.stats.map((stat) => (
                   <div key={stat.label}>
                     <p className="text-lg font-semibold md:text-xl">{stat.value}</p>
-                    <p className="max-w-[6rem] text-[10px] leading-tight text-ink/60 md:text-xs">
+                    <p className="max-w-[7.5rem] text-[10px] leading-tight text-ink/60 md:text-xs">
                       {stat.label}
                     </p>
                   </div>

@@ -17,12 +17,11 @@ export const navLinks = [
 ];
 
 export const heroContent = {
-  eyebrow: "Design start here..",
   pageTitle: "Gabe Gonzalez's Personal Portfolio Website",
   sideLabel: "Portfolio 2026",
   stats: [
     { value: "+200", label: "Projects completed" },
-    { value: "+50", label: "Startup teams" },
+    { value: "+7", label: "Products brought to market" },
   ],
   headline: "Hello",
   tagline: "— it's Gabe Gonzalez, an AI marketing strategist",
@@ -114,9 +113,7 @@ export const experienceContent = {
 
 export const ctaBannerContent = {
   eyebrow: "Your Next Free Consultation Now!",
-  heading: "Exclusive Winter Deal Days Get a Free Consultation!",
-  subtext:
-    "Book your free consultation today and let's craft a growth strategy tailored to your goals.",
+  heading: "Book your free consultation today and let's craft a growth strategy tailored to your goals.",
   cta: "Book A Call",
   backgroundImage: "https://picsum.photos/id/60/1600/900",
 };

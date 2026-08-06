@@ -17,12 +17,9 @@ export function CTABanner() {
           />
           <div className="relative z-10 mx-auto max-w-xl">
             <p className="text-sm text-cream/70">{ctaBannerContent.eyebrow}</p>
-            <h2 className="mt-4 text-3xl font-semibold leading-tight text-cream md:text-5xl">
+            <h2 className="mt-4 text-2xl font-semibold leading-snug text-cream md:text-4xl">
               {ctaBannerContent.heading}
             </h2>
-            <p className="mx-auto mt-4 max-w-sm text-sm text-cream/60">
-              {ctaBannerContent.subtext}
-            </p>
             <div className="mt-8 flex justify-center">
               <PillButton href="#contact" variant="light">
                 {ctaBannerContent.cta}
