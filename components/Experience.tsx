@@ -56,20 +56,14 @@ export function Experience() {
               </div>
 
               {row.expanded && (
-                <div className="flex flex-col gap-6 pb-8 md:flex-row md:items-center">
-                  <p className="max-w-xl text-sm leading-relaxed text-ink/60">
-                    {row.expanded.paragraph}
-                  </p>
-                  <a
-                    href={siteConfig.resumeUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={experienceContent.resumeLabel}
-                    className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-ink/15 text-ink/60 transition-colors hover:border-accent hover:text-accent"
-                  >
-                    <ArrowUpRight className="h-4 w-4" />
-                  </a>
-                </div>
+                <ul className="flex flex-col gap-3 pb-8">
+                  {row.expanded.bullets.map((bullet) => (
+                    <li key={bullet} className="flex max-w-2xl gap-3">
+                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                      <span className="text-sm leading-relaxed text-ink/60">{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
               )}
             </FadeIn>
           ))}

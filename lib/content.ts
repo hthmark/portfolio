@@ -73,7 +73,7 @@ export type ExperienceRow = {
   role: string;
   tags: string[];
   expanded?: {
-    paragraph: string;
+    bullets: string[];
   };
 };
 
@@ -92,8 +92,10 @@ export const experienceContent = {
       role: "Head of Marketing — AI-driven growth, programmatic SEO & lifecycle email",
       tags: ["AI Marketing", "Growth"],
       expanded: {
-        paragraph:
-          "Built AI-powered workflows across competitive intelligence, programmatic SEO, content, and outreach — scaling a lean team to an 18.96x blended marketing ROI, 32.5% YoY organic session growth, and 66% marketing influence on new-logo wins.",
+        bullets: [
+          "Built AI-powered workflows to architect a multi-channel growth model — from competitive intelligence and programmatic SEO to campaign reporting and outreach — helping a lean team sustain an 18.96x blended marketing ROI.",
+          "Directed a search-visibility strategy that repositioned the company from page-two obscurity to top-of-page-one authority, improving average ranking position from 13.5 to 8.4 and driving 32.5% YoY organic session growth.",
+        ],
       },
     },
     {
@@ -102,6 +104,12 @@ export const experienceContent = {
       dateRange: "Oct 2022 - June 2025",
       role: "Paid Media Strategist — $2M+ Google Ads & multi-touch attribution",
       tags: ["Paid Media"],
+      expanded: {
+        bullets: [
+          "Directed strategy and allocation for a $2M+ Google Ads investment, prioritizing spend toward highest-intent segments to achieve a 9:1 ROAS, plus a complementary $480K Meta/LinkedIn paid social program.",
+          "Built multi-touch attribution infrastructure (Salesforce + Looker Studio) and redesigned lead scoring to lift MQL conversion from 3.7% to 4.9% in two months.",
+        ],
+      },
     },
     {
       company: "Here to Help Marketing, Deltona, FL",
@@ -109,6 +117,12 @@ export const experienceContent = {
       dateRange: "Dec 2019 - Oct 2022",
       role: "Freelance Digital Marketing & E-Commerce Consultant",
       tags: ["SEO", "E-Commerce"],
+      expanded: {
+        bullets: [
+          "Led SEO and paid media strategy engagements for multiple freelance clients.",
+          "Re-architected a global e-commerce platform to support over $40K in monthly sales at scale.",
+        ],
+      },
     },
     {
       company: "Wiley Education Services, Maitland, FL",
@@ -116,6 +130,12 @@ export const experienceContent = {
       dateRange: "Aug 2017 - Oct 2019",
       role: "Student Services & Marketing Coordinator",
       tags: ["Lifecycle Marketing"],
+      expanded: {
+        bullets: [
+          "Directed multi-channel re-enrollment campaigns (email and SMS) achieving a 3% conversion rate.",
+          "Served as key liaison between leadership and external partners on budget forecasting and program execution.",
+        ],
+      },
     },
   ] satisfies ExperienceRow[],
 };
