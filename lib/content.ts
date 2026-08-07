@@ -161,22 +161,19 @@ export const latestWorksContent = {
       kind: "website",
       title: "Go Solutions — Simplicity Is Now Roundtable",
       href: "https://www.gosolutions.com/simplicity-is-now-roundtable/",
-      // TODO: swap for the real screenshot once uploaded to Drive.
-      image: "https://picsum.photos/id/1050/800/900",
+      image: "/images/portfolio-gosolutions.webp",
     },
     {
       kind: "website",
       title: "Kansas City TV Mounting Experts",
       href: "https://kansascitytvmounting.com/",
-      // TODO: swap for the real screenshot once uploaded to Drive.
-      image: "https://picsum.photos/id/1051/800/900",
+      image: "/images/portfolio-kctv.webp",
     },
     {
       kind: "website",
       title: "Pareo Island",
       href: "https://pareoisland.com/",
-      // TODO: swap for the real screenshot once uploaded to Drive.
-      image: "https://picsum.photos/id/1052/800/900",
+      image: "/images/portfolio-pareo.webp",
     },
   ] satisfies PortfolioItem[],
 };

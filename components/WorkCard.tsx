@@ -14,7 +14,7 @@ export function WorkCard({ item }: { item: PortfolioItem }) {
       rel="noopener noreferrer"
       className="group relative block overflow-hidden rounded-card"
     >
-      <div className="relative aspect-[4/5] w-full bg-ink/5">
+      <div className="relative aspect-video w-full bg-ink/5">
         <Image
           src={thumbnail}
           alt={item.title}
