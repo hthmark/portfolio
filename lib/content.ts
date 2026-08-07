@@ -51,10 +51,9 @@ export const aboutContent = {
   ],
 };
 
-export type WorkItem = {
-  title: string;
-  videoId: string;
-};
+export type PortfolioItem =
+  | { kind: "video"; title: string; videoId: string }
+  | { kind: "website"; title: string; href: string; image: string };
 
 // Thumbnail is derived from the video ID — no API key or fetch needed.
 // Falls back to hqdefault (always exists) if a video has no maxres thumbnail.
@@ -154,10 +153,32 @@ export const latestWorksContent = {
   channelUrl: "",
   items: [
     {
-      title: "YouTube video",
+      kind: "video",
+      title: "How to Start Google Meridian in 60 Seconds FAST",
       videoId: "Am73sKyZ01U",
     },
-  ] satisfies WorkItem[],
+    {
+      kind: "website",
+      title: "Go Solutions — Simplicity Is Now Roundtable",
+      href: "https://www.gosolutions.com/simplicity-is-now-roundtable/",
+      // TODO: swap for the real screenshot once uploaded to Drive.
+      image: "https://picsum.photos/id/1050/800/900",
+    },
+    {
+      kind: "website",
+      title: "Kansas City TV Mounting Experts",
+      href: "https://kansascitytvmounting.com/",
+      // TODO: swap for the real screenshot once uploaded to Drive.
+      image: "https://picsum.photos/id/1051/800/900",
+    },
+    {
+      kind: "website",
+      title: "Pareo Island",
+      href: "https://pareoisland.com/",
+      // TODO: swap for the real screenshot once uploaded to Drive.
+      image: "https://picsum.photos/id/1052/800/900",
+    },
+  ] satisfies PortfolioItem[],
 };
 
 export const finalCtaContent = {
